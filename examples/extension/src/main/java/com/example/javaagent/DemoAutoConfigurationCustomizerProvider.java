@@ -5,7 +5,6 @@
 
 package com.example.javaagent;
 
-import com.google.auto.service.AutoService;
 import io.opentelemetry.sdk.autoconfigure.spi.AutoConfigurationCustomizer;
 import io.opentelemetry.sdk.autoconfigure.spi.AutoConfigurationCustomizerProvider;
 import io.opentelemetry.sdk.autoconfigure.spi.ConfigProperties;
@@ -25,7 +24,7 @@ import java.util.Map;
  * @see AutoConfigurationCustomizerProvider
  * @see DemoPropagatorProvider
  */
-@AutoService(AutoConfigurationCustomizerProvider.class)
+// @AutoService(AutoConfigurationCustomizerProvider.class)
 public class DemoAutoConfigurationCustomizerProvider
     implements AutoConfigurationCustomizerProvider {
 
